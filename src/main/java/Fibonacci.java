@@ -6,14 +6,14 @@ public class Fibonacci {
 
     private int f1, f2;
 
-    public int n;
+    private int n;
 
     public Fibonacci() {
     }
 
     public Fibonacci(int start, int end, int n) {
         setInterval(start, end);
-        this.n = n;
+        setN(n);
     }
 
     public void setInterval(int start, int end) {
@@ -64,14 +64,14 @@ public class Fibonacci {
         }
 
         if (n == 0 || n == 1) {
-            System.out.println("your Fibonacci number is " + firstElement+ " for N="+n);
+            System.out.println("your Fibonacci number is " + firstElement + " for N=" + n);
             if (firstElement % 2 == 0) {
                 System.out.println("100% of even numbers");
             } else {
                 System.out.println("100% of odd numbers");
             }
         } else if (n == 2) {
-            System.out.println("your Fibonacci number is " + secondElement+ " for N="+n);
+            System.out.println("your Fibonacci number is " + secondElement + " for N=" + n);
             System.out.println("50% of even and odd numbers");
         } else {
             for (int i = 2; i <= n; i++) {
@@ -87,7 +87,7 @@ public class Fibonacci {
                 secondElement = newFibonacci;
             }
 
-            System.out.println("Your last Fibonacci number is " + secondElement+ " for N="+n);
+            System.out.println("Your last Fibonacci number is " + secondElement + " for N=" + n);
             getPercentage(countOddFibonacci + 1, countEvenFibonacci + 1);
         }
     }

@@ -5,9 +5,7 @@ import java.io.InputStreamReader;
 public class ConsoleOperation {
     public InputStreamReader stream_Reader = new InputStreamReader(System.in);
     public BufferedReader keyboard = new BufferedReader(stream_Reader);
-
-    final int STABLE = 100;
-
+    
     public void menu() throws IOException {
         int start = 0;
         int end = 0;
