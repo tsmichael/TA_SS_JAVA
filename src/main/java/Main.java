@@ -6,5 +6,9 @@ public class Main {
         Fibonacci fibonacci = new Fibonacci();
         fibonacci.setInterval(0,5);
         fibonacci.sumInterval();
+
+        fibonacci.initF1F2();
+        fibonacci.setN(5);
+        fibonacci.runFibonacci();
     }
 }
