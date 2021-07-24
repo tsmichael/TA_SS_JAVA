@@ -1,3 +1,5 @@
+package hw_ta_java_1;
+
 import java.io.IOException;
 
 public class Main {

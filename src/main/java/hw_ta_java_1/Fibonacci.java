@@ -1,3 +1,5 @@
+package hw_ta_java_1;
+
 public class Fibonacci {
 
     private int startInterval;
@@ -64,14 +66,14 @@ public class Fibonacci {
         }
 
         if (n == 0 || n == 1) {
-            System.out.println("your Fibonacci number is " + firstElement + " for N=" + n);
+            System.out.println("your hw_ta_java_1.Fibonacci number is " + firstElement + " for N=" + n);
             if (firstElement % 2 == 0) {
                 System.out.println("100% of even numbers");
             } else {
                 System.out.println("100% of odd numbers");
             }
         } else if (n == 2) {
-            System.out.println("your Fibonacci number is " + secondElement + " for N=" + n);
+            System.out.println("your hw_ta_java_1.Fibonacci number is " + secondElement + " for N=" + n);
             System.out.println("50% of even and odd numbers");
         } else {
             for (int i = 2; i <= n; i++) {
@@ -87,7 +89,7 @@ public class Fibonacci {
                 secondElement = newFibonacci;
             }
 
-            System.out.println("Your last Fibonacci number is " + secondElement + " for N=" + n);
+            System.out.println("Your last hw_ta_java_1.Fibonacci number is " + secondElement + " for N=" + n);
             getPercentage(countOddFibonacci + 1, countEvenFibonacci + 1);
         }
     }
@@ -96,7 +98,7 @@ public class Fibonacci {
         double oddPercent = oddCount * 100 / (oddCount + evenCount);
         double evenPercent = evenCount * 100 / (oddCount + evenCount);
 
-        System.out.println("Fibonacci run got " + oddPercent + "% of odd numbers and " + evenPercent + "% of even numbers");
+        System.out.println("hw_ta_java_1.Fibonacci run got " + oddPercent + "% of odd numbers and " + evenPercent + "% of even numbers");
     }
 
 }

@@ -1,3 +1,5 @@
+package hw_ta_java_1;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -5,7 +7,7 @@ import java.io.InputStreamReader;
 public class ConsoleOperation {
     public InputStreamReader stream_Reader = new InputStreamReader(System.in);
     public BufferedReader keyboard = new BufferedReader(stream_Reader);
-    
+
     public void menu() throws IOException {
         int start = 0;
         int end = 0;
