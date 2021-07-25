@@ -4,7 +4,7 @@ public class Mercedes extends Car {
 
     String model;
 
-    Mercedes(){
+    Mercedes() {
         super();
     }
 
@@ -27,6 +27,13 @@ public class Mercedes extends Car {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    @Override
+    public String toString() {
+        return "{---Mercedes---}" +
+                "\nmodel='" + model + '\'' +
+                "\nbrand='" + brand + '\'';
     }
 
 

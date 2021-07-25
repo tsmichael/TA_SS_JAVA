@@ -10,11 +10,14 @@ public class BMW extends Car {
 
     @Override
     public String getBrand() {
-        if (this.brand.isEmpty()) {
-            return this.getClass().getName();
-        } else {
-            return this.brand;
-        }
+        return this.brand;
+    }
+
+    @Override
+    public String toString() {
+        return "{---BMW---}" +
+                "\nmodel='" + model + '\'' +
+                "\nbrand='" + brand + '\'';
     }
 
     public void setBrand(String brand) {

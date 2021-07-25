@@ -3,7 +3,7 @@ package hw_ta_java_2;
 public class Car implements Vehicle,Alarm {
 
     String brand;
-    int speed;
+    int speed = 180;
 
     @Override
     public String getBrand() {
