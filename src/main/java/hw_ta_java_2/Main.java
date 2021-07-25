@@ -1,13 +1,12 @@
 package hw_ta_java_2;
 
-import java.util.Arrays;
+import java.io.IOException;
 
 public class Main {
 
-    public static void main(String... args) {
+    public static void main(String... args) throws IOException {
 
-        for(MenuConsole ms : MenuConsole.values()){
-            System.out.println(ms);
-        }
+        Menu menu = new Menu();
+        menu.menuRunOption();
     }
 }
